@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
 import {
   PROJECT_READ_REPOSITORY,
-  ProjectReadModel,
-  ProjectReadRepository,
+  type ProjectReadModel,
+  type ProjectReadRepository,
 } from '../../domain/repositories/project-read.repository';
 
 /** QUERY: lista projetos do usuário — lê do read model (Redis). */

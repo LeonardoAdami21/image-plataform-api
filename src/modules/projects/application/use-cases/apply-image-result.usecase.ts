@@ -2,11 +2,11 @@ import { Inject, Injectable, Logger } from '@nestjs/common';
 import { ImageProcessedPayload } from '../../../../shared/messaging/events';
 import {
   PROJECT_REPOSITORY,
-  ProjectRepository,
+  type ProjectRepository,
 } from '../../domain/repositories/project.repository';
 import {
   PROJECT_READ_REPOSITORY,
-  ProjectReadRepository,
+  type ProjectReadRepository,
 } from '../../domain/repositories/project-read.repository';
 
 /** Aplica o resultado do processamento (evento image.processed). */
