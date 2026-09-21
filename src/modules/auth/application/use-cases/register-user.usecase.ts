@@ -3,11 +3,17 @@ import { User } from '../../domain/entities/user.entity';
 import { Email } from '../../domain/value-objects/email.vo';
 import {
   USER_REPOSITORY,
-  UserRepository,
+  type UserRepository,
 } from '../../domain/repositories/user.repository';
-import { PASSWORD_HASHER, PasswordHasher } from '../ports/password-hasher.port';
-import { ID_GENERATOR, IdGenerator } from '../ports/id-generator.port';
-import { TOKEN_GENERATOR, TokenGenerator } from '../ports/token-generator.port';
+import {
+  PASSWORD_HASHER,
+  type PasswordHasher,
+} from '../ports/password-hasher.port';
+import { ID_GENERATOR, type IdGenerator } from '../ports/id-generator.port';
+import {
+  TOKEN_GENERATOR,
+  type TokenGenerator,
+} from '../ports/token-generator.port';
 import { AuthResult, RegisterUserInput } from '../dtos/auth.dto';
 import { EmailAlreadyInUseError } from '../errors/auth.errors';
 

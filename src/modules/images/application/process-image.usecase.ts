@@ -6,7 +6,10 @@ import {
   ImageJobRequestedPayload,
   ImageProcessedPayload,
 } from '../../../shared/messaging/events';
-import { IMAGE_PROCESSOR, ImageProcessor } from './ports/image-processor.port';
+import {
+  IMAGE_PROCESSOR,
+  type ImageProcessor,
+} from './ports/image-processor.port';
 
 /**
  * Recebe um job, processa a imagem e publica image.processed.

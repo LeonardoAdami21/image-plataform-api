@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
 import {
   PROJECT_READ_REPOSITORY,
-  ProjectReadModel,
-  ProjectReadRepository,
+  type ProjectReadModel,
+  type ProjectReadRepository,
 } from '../../domain/repositories/project-read.repository';
 import {
   ForbiddenProjectAccessError,

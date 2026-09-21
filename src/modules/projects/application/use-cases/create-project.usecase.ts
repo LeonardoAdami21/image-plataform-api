@@ -7,14 +7,17 @@ import {
 import { Project } from '../../domain/entities/project.entity';
 import {
   PROJECT_REPOSITORY,
-  ProjectRepository,
+  type ProjectRepository,
 } from '../../domain/repositories/project.repository';
 import {
   PROJECT_READ_REPOSITORY,
-  ProjectReadRepository,
+  type ProjectReadRepository,
 } from '../../domain/repositories/project-read.repository';
-import { EVENT_PUBLISHER, EventPublisher } from '../ports/event-publisher.port';
-import { ID_GENERATOR, IdGenerator } from '../ports/id-generator.port';
+import {
+  EVENT_PUBLISHER,
+  type EventPublisher,
+} from '../ports/event-publisher.port';
+import { ID_GENERATOR, type IdGenerator } from '../ports/id-generator.port';
 import { CreateProjectInput } from '../dtos/project.dto';
 
 /**
